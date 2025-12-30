@@ -1,18 +1,30 @@
-.vscode
+# VS Code
+.vscode/
+
+# Environment variables
 .env
-.dart_tool
+
+# Dart / Flutter
+.dart_tool/
 .packages
-buildlog.txt
-.idea
-*.iml
-pub/
+build/
 *.log
+
+# IDEs
+.idea/
+*.iml
+
+# OS files
 .DS_Store
+
+# Temp / backup files
 *.swp
 *.tmp
 *.bak
 *.old
 *.orig
 *.rej
+
+# Java artifacts (optional)
 *.class
 *.jar
