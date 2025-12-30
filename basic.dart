@@ -1,0 +1,29 @@
+import 'dart:io';
+void main(){
+  print("Hello, World!");
+
+// This is a single line comment
+  /*
+    This is a 
+    multi-line comment
+  */
+  //Variable and Data Types
+  var firstName = "Aryan";
+  var lastName = "Rana";
+  int rollNO, dateOfBirth, yearOfAdmission;
+  int age = 20;
+  dynamic address = "Keshwari, Giridih, Jharkhand, In70dia";
+  print("Name: $firstName $lastName");
+  print("Age: $age");
+  final Name = "Aryan Rana";
+  //Name  = "Rana Aryan"; // This will give an error because final variables cannot be reassigned
+  print("Name: $Name");
+  const pi = 3.14;
+  //pi = 3.14159; // This will give an error because const variables
+  print("Value of pi: $pi");
+  String? course = stdin.readLineSync();
+  int? courseCode = int.parse(stdin.readLineSync()!);
+  print("Course: $course");
+  print("Course Code: $courseCode");
+  
+}

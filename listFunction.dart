@@ -1,0 +1,37 @@
+void main(){
+  List<int> numbers = [10, 20, 30, 40, 50];
+  print("Original List: $numbers");
+  print("Length: ${numbers.length}");
+  print("First Element: ${numbers.first}");
+  print("Last Element: ${numbers.last}");
+  print("Is Empty: ${numbers.isEmpty}");
+  print("Is Not Empty: ${numbers.isNotEmpty}");
+  print("Reversed List: ${numbers.reversed.toList()}");
+  numbers.add(60);
+  print("After Adding 60: $numbers");
+  numbers.remove(30);
+  print("After Removing 30: $numbers");
+  numbers.insert(2, 25);
+  print("After Inserting 25 at index 2: $numbers");
+  print("Index of 40: ${numbers.indexOf(40)}");
+  print("Sublist (1,4): ${numbers.sublist(1,4)}");
+  numbers.sort();
+  print("Sorted List: $numbers");
+  print("Contains 20: ${numbers.contains(20)}");
+  numbers.clear();
+  print("After Clearing: $numbers");
+  print("Length after Clearing: ${numbers.length}");
+  numbers.addAll([5, 15, 25, 35, 45, 55, 65]);
+  print("toString: ${numbers.toString()}");
+  numbers.shuffle();
+  print("After Shuffling: $numbers");
+  numbers.removeAt(1);
+  print("After Removing at index 1: $numbers");
+  numbers.removeLast();
+  print("After Removing Last Element: $numbers");
+  numbers.removeRange(0, 1);
+  print("After Removing Range (0,1): $numbers");
+  numbers.forEach((n) => print(n));
+  numbers.fillRange(0, numbers.length, 90);
+  print("After Filling with 90: $numbers");
+}
