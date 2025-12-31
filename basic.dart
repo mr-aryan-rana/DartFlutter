@@ -32,7 +32,7 @@ void main(){
   bool isPassed = true; //isPassed is bool
   List<String> subjects = ["Math", "Science", "History"]; //subjects is List of Strings
   Map<String, int> marks = {"Math": 95, "Science": 90, "History": 85}; //marks is Map of String and int
-  final university = "XYZ University"; //university is final String
-  const maxScore = 100; //maxScore is const int
+  final university = "XYZ University"; //university is final String (time) runtime constant
+  const maxScore = 100; //maxScore is const int (compile time constant) PI
 
 }
