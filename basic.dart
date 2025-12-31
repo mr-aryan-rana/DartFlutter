@@ -25,5 +25,14 @@ void main(){
   int? courseCode = int.parse(stdin.readLineSync()!);
   print("Course: $course");
   print("Course Code: $courseCode");
-  
+  //var, dynamic, int, double, String, bool, List, Map,const, final
+  var fullName = "Aryan Rana"; //name is String
+  dynamic totalScore = 95; //score is int
+  double percentage = 89.5; //percentage is double
+  bool isPassed = true; //isPassed is bool
+  List<String> subjects = ["Math", "Science", "History"]; //subjects is List of Strings
+  Map<String, int> marks = {"Math": 95, "Science": 90, "History": 85}; //marks is Map of String and int
+  final university = "XYZ University"; //university is final String
+  const maxScore = 100; //maxScore is const int
+
 }
