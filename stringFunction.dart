@@ -1,5 +1,12 @@
 void main(){
   String sample = "Hello, Dart!";
+  String? greeting = null;
+  print(greeting ?? "No greeting available");
+  print(greeting?.length ?? 0);
+  greeting = "Welcome to Dart programming.";
+  print(greeting ?? "No greeting available");
+  print(greeting?.length ?? 0);
+  
   print("Original String: $sample");
   print("Length: ${sample.length}");
   print("Uppercase: ${sample.toUpperCase()}");
