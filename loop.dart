@@ -59,5 +59,19 @@ void main(){
   //arrow function in loop
   List<int> numbers = [1, 2, 3, 4, 5];
   numbers.forEach((number) => print("Number (arrow function): $number"));
-  
+  for(var n in numbers){
+    print(n);
+    if(n == 3) break;
+  }
+  numbers.forEach((n){
+    print(n);
+    // if(n == 2) break; // Error: 'break' cannot be used here
+    if(n == 4) return; // 'return' can be used to skip to next iteration
+  });
+
+  Map<String, int> scoreMap = {"Alice": 90, "Bob": 85, "Charlie": 95};
+  scoreMap.forEach((name, score){ 
+    print("Name: $name, Score: $score"); 
+    });
+  scoreMap.forEach((n,s) => print("Name: $n, Score: $s"));
 }
